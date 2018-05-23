@@ -9,17 +9,17 @@
   
   <title>input输入框判断价格的方法 | 骚年的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="代码如下：&amp;lt;!DOCTYPE html&amp;gt;                 Document                    function onkey (obj) {            if( ! /^[1-9][0-9]{0,8}[.]{0,1}[0-9]{0,2}$/.test(obj.value)){                   obj.value=’’;">
+  <meta name="description" content="最近在项目中遇到了限制价格整数和小数的问题,项目中价格需要限制价格整数部分最多9位和小数部分最多2位,遇到了不少的坑,所以决定写一篇博客自己也在网上找了很多，发现很多不能用,所以自己请教了一下其他人,终于顺利解决了,分享给大家。html代码如下：1&amp;lt;input type=&amp;quot;text&amp;quot; onkeyup= &amp;quot;onkey(this)&amp;quot; /&amp;gt; 12345">
 <meta property="og:type" content="article">
 <meta property="og:title" content="input输入框判断价格的方法">
 <meta property="og:url" content="http://yoursite.com/2018/05/19/input输入框判断价格的方法/index.html">
 <meta property="og:site_name" content="骚年的博客">
-<meta property="og:description" content="代码如下：&amp;lt;!DOCTYPE html&amp;gt;                 Document                    function onkey (obj) {            if( ! /^[1-9][0-9]{0,8}[.]{0,1}[0-9]{0,2}$/.test(obj.value)){                   obj.value=’’;">
+<meta property="og:description" content="最近在项目中遇到了限制价格整数和小数的问题,项目中价格需要限制价格整数部分最多9位和小数部分最多2位,遇到了不少的坑,所以决定写一篇博客自己也在网上找了很多，发现很多不能用,所以自己请教了一下其他人,终于顺利解决了,分享给大家。html代码如下：1&amp;lt;input type=&amp;quot;text&amp;quot; onkeyup= &amp;quot;onkey(this)&amp;quot; /&amp;gt; 12345">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-05-19T08:09:29.784Z">
+<meta property="og:updated_time" content="2018-05-23T02:01:56.199Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="input输入框判断价格的方法">
-<meta name="twitter:description" content="代码如下：&amp;lt;!DOCTYPE html&amp;gt;                 Document                    function onkey (obj) {            if( ! /^[1-9][0-9]{0,8}[.]{0,1}[0-9]{0,2}$/.test(obj.value)){                   obj.value=’’;">
+<meta name="twitter:description" content="最近在项目中遇到了限制价格整数和小数的问题,项目中价格需要限制价格整数部分最多9位和小数部分最多2位,遇到了不少的坑,所以决定写一篇博客自己也在网上找了很多，发现很多不能用,所以自己请教了一下其他人,终于顺利解决了,分享给大家。html代码如下：1&amp;lt;input type=&amp;quot;text&amp;quot; onkeyup= &amp;quot;onkey(this)&amp;quot; /&amp;gt; 12345">
   
     <link rel="alternative" href="/atom.xml" title="骚年的博客" type="application/atom+xml">
   
@@ -308,8 +308,10 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>代码如下：<br>&lt;!DOCTYPE html&gt;</p>
-<html lang="zh"><br><head><br>    <meta charset="UTF-8"><br>    <meta name="viewport" content="width=device-width, initial-scale=1.0"><br>    <meta http-equiv="X-UA-Compatible" content="ie=edge"><br>    <title>Document</title><br></head><br><body><br>    <input type="text" onkeyup="onkey(this)"><br>      <script type="text/javascript"><br>          function onkey (obj) {<br>            if( ! /^[1-9][0-9]{0,8}[.]{0,1}[0-9]{0,2}$/.test(obj.value)){<br>                   obj.value=’’;<br>            }<br>          }<br>      </script><br></body><br></html>
+        <p>最近在项目中遇到了限制价格整数和小数的问题,项目中价格需要限制价格整数部分最多9位和小数部分最多2位,遇到了不少的坑,所以决定写一篇博客<br>自己也在网上找了很多，发现很多不能用,所以自己请教了一下其他人,终于顺利解决了,分享给大家。<br>html代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type=&quot;text&quot; onkeyup= &quot;onkey(this)&quot; /&gt;</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">js代码如下：</span><br><span class="line">	  	function onkey (obj) &#123;</span><br><span class="line">            if( ! /^[1-9][0-9]&#123;0,8&#125;[.]&#123;0,1&#125;[0-9]&#123;0,2&#125;$/.test(obj.value))&#123;</span><br><span class="line">               	obj.value=&apos;&apos;;</span><br><span class="line">            &#125;	</span><br><span class="line">	  	&#125;</span><br></pre></td></tr></table></figure>
+<p>这里最主要的就是正则表达式,限制整数位为9位,小数点位为2位。</p>
+
       
     </div>
     
@@ -320,7 +322,7 @@
         <p><span>本文标题:</span><a  href="/2018/05/19/input输入框判断价格的方法/">input输入框判断价格的方法</a></p>
         <p><span>文章作者:</span><a  href="/" title="访问 骚年 的个人博客">骚年</a></p>
         <p><span>发布时间:</span>2018年05月19日 - 16时08分</p>
-        <p><span>最后更新:</span>2018年05月19日 - 16时09分</p>
+        <p><span>最后更新:</span>2018年05月23日 - 10时01分</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2018/05/19/input输入框判断价格的方法/" title="input输入框判断价格的方法">http://yoursite.com/2018/05/19/input输入框判断价格的方法/</a>
             <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2018/05/19/input输入框判断价格的方法/　　作者: 骚年" title=""></span>
