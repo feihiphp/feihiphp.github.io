@@ -273,6 +273,64 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-input输入框判断价格的方法" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a  href="/2018/05/19/input输入框判断价格的方法/" class="article-date">
+      <time datetime="2018-05-19T08:08:59.000Z" itemprop="datePublished">2018-05-19</time>
+</a>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a  class="article-title" href="/2018/05/19/input输入框判断价格的方法/">input输入框判断价格的方法</a>
+    </h1>
+  
+
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>代码如下：<br>&lt;!DOCTYPE html&gt;</p>
+<html lang="zh"><br><head><br>    <meta charset="UTF-8"><br>    <meta name="viewport" content="width=device-width, initial-scale=1.0"><br>    <meta http-equiv="X-UA-Compatible" content="ie=edge"><br>    <title>Document</title><br></head><br><body><br>    <input type="text" onkeyup="onkey(this)"><br>      <script type="text/javascript"><br>          function onkey (obj) {<br>            if( ! /^[1-9][0-9]{0,8}[.]{0,1}[0-9]{0,2}$/.test(obj.value)){<br>                   obj.value=’’;<br>            }<br>          }<br>      </script><br></body><br></html>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
+  
     <article id="post-我的第一个博客" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
