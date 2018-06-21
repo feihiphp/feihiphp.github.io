@@ -407,73 +407,6 @@
 
 
   
-    <article id="post-jq遍历一维数组以及二维数组的方法" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a  href="/2018/05/19/jq遍历一维数组以及二维数组的方法/" class="article-date">
-      <time datetime="2018-05-19T08:08:59.000Z" itemprop="datePublished">2018-05-19</time>
-</a>
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a  class="article-title" href="/2018/05/19/jq遍历一维数组以及二维数组的方法/">input输入框判断价格的方法</a>
-    </h1>
-  
-
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>jq里遍历数组用的方法是$.each,下面就举两个实例。<br>1、遍历一个普通的一维数组：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">//声明数据有下面两种方式</span><br><span class="line">//var ai=new Array(&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;);</span><br><span class="line">var ai=[&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;];</span><br><span class="line">$.each(ai,function(i,v)&#123;</span><br><span class="line">    document.write(i+&quot;.&quot;+v+&quot;\n&quot;);//输出结果为:0.a 1.b 2.c 3.d</span><br><span class="line">&#125;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
-<p>2、遍历一个普通的二维数组：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"> 	var ai=[[&quot;a.1&quot;,&quot;a.2&quot;],[&quot;b.1&quot;,&quot;b.2&quot;],[&quot;c.1&quot;,&quot;c.2&quot;]];</span><br><span class="line">$.each(ai,function(i,v)&#123;</span><br><span class="line">    document.write(i+&quot;:&quot;+v+&quot;&lt;br&gt;&quot;); //这里，把二维数组里的每一个子数组当成上面一维数组里的每一个单独项就好理解了</span><br><span class="line">     </span><br><span class="line">    //因为这个二维数据的每个项其实都是一个一维数组，所以我们可以继续用$.each来循环遍历：</span><br><span class="line">    $.each(v,function(i,v)&#123;</span><br><span class="line">        document.write(i+&quot;.&quot;+v+&quot;\n&quot;);</span><br><span class="line">    &#125;);      </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/前端学习/">前端学习</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jq/">jq</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js/">js</a></li></ul>
-    </div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-
-
-  
     <article id="post-input输入框判断价格的方法" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -521,6 +454,73 @@
       
     <div class="article-tag tagcloud">
         <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js/">js</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/正则表达式/">正则表达式</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-jq遍历一维数组以及二维数组的方法" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a  href="/2018/05/19/jq遍历一维数组以及二维数组的方法/" class="article-date">
+      <time datetime="2018-05-19T08:08:59.000Z" itemprop="datePublished">2018-05-19</time>
+</a>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a  class="article-title" href="/2018/05/19/jq遍历一维数组以及二维数组的方法/">input输入框判断价格的方法</a>
+    </h1>
+  
+
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>jq里遍历数组用的方法是$.each,下面就举两个实例。<br>1、遍历一个普通的一维数组：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">//声明数据有下面两种方式</span><br><span class="line">//var ai=new Array(&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;);</span><br><span class="line">var ai=[&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;];</span><br><span class="line">$.each(ai,function(i,v)&#123;</span><br><span class="line">    document.write(i+&quot;.&quot;+v+&quot;\n&quot;);//输出结果为:0.a 1.b 2.c 3.d</span><br><span class="line">&#125;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
+<p>2、遍历一个普通的二维数组：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"> 	var ai=[[&quot;a.1&quot;,&quot;a.2&quot;],[&quot;b.1&quot;,&quot;b.2&quot;],[&quot;c.1&quot;,&quot;c.2&quot;]];</span><br><span class="line">$.each(ai,function(i,v)&#123;</span><br><span class="line">    document.write(i+&quot;:&quot;+v+&quot;&lt;br&gt;&quot;); //这里，把二维数组里的每一个子数组当成上面一维数组里的每一个单独项就好理解了</span><br><span class="line">     </span><br><span class="line">    //因为这个二维数据的每个项其实都是一个一维数组，所以我们可以继续用$.each来循环遍历：</span><br><span class="line">    $.each(v,function(i,v)&#123;</span><br><span class="line">        document.write(i+&quot;.&quot;+v+&quot;\n&quot;);</span><br><span class="line">    &#125;);      </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/前端学习/">前端学习</a>
+    </div>
+
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jq/">jq</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js/">js</a></li></ul>
     </div>
 
       
